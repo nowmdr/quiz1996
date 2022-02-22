@@ -1,0 +1,47 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Amiko:wght@400;700&display=swap");
+body,
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+* {
+  font-family: "Abhaya Libre", serif;
+  font-family: "Amiko", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %font-family-title;
+}
+p,
+span,
+a,
+div,
+ul,
+li {
+  @extend %font-family-regular;
+  @extend %font-size-regular;
+}
+a {
+  @extend %links;
+}
+[class*="__container"] {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0px auto;
+  @include mobile-point(lg) {
+    max-width: 1087px;
+    
+  }
+}
