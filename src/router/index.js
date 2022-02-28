@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes = [
   {
     path: "/",
-    redirect: "/offer",
+    redirect: "/quiz",
     name: "Main",
     component: () => import("../views/Main.vue"),
   },
